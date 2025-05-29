@@ -1,7 +1,8 @@
+
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazon.svg" alt="Amazon Icon" width="24" height="24" /> 
 # Learn & Be Curious: Problema propusa 2025
 
-<!-- folosește Simple Icons CDN -->
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazon.svg" alt="Amazon Icon" width="24" height="24" />
+
 
 Introducere
 O hartă rutieră a unui oraș, definită prin intersecții și străzi între aceste intersecții, poate fi
