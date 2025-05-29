@@ -1,0 +1,32 @@
+8 11
+Pacurari Nicolina TudorVladimirescu Copou Tatarasi PoduRos Palas Unirii
+Nicolina Pacurari
+Pacurari Palas
+Nicolina Palas
+TudorVladimirescu Nicolina
+TudorVladimirescu Copou
+Tatarasi Palas
+Palas Tatarasi
+PoduRos Palas
+Tatarasi PoduRos
+Copou Tatarasi
+Tatarasi Copou
+3
+Pacurari TudorVladimirescu
+PoduRos Copou
+Nicolina PoduRos
+3
+Nicolina PoduRos
+Palas TudorVladimirescu
+Pacurari Copou
+10
+c Palas Tatarasi 1
+q Palas Copou 0
+c TudorVladimirescu Copou 3
+q Tatarasi TudorVladimirescu 1
+q TudorVladimirescu Palas 2 Pacurari
+c TudorVladimirescu Palas 0
+c PoduRos Palas 2
+q TudorVladimirescu PoduRos 1
+c PoduRos Tatarasi 2
+c TudorVladimirescu Copou 3

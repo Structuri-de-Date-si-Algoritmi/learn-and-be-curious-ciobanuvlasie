@@ -1,5 +1,4 @@
 #include <iostream>
-#include "mylib.h"
 #include <string.h>
 using namespace std;
 
@@ -15,6 +14,7 @@ int index(char key[])
         if (strcmp(strazi[i], key) == 0)
             return i;
     }
+    return -1;
 }
 // exista drum de la start la end
 int P1(char start[], char end[])
@@ -127,6 +127,8 @@ void P3(char ch, char start[], char end[], int caz,char intersectie[])
         }
     }
 }
+
+void P4();
 
 int main()
 {
