@@ -2,7 +2,7 @@
 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazon.svg" alt="Amazon Icon" width="24" height="24" /> Learn & Be Curious by Amazon
 
 
-##Problema propusa
+## Problema propusa
 O hartă rutieră a unui oraș, definită prin intersecții și străzi între aceste intersecții, poate fi
 reprezentată sub forma unui graf orientat în care nodurile reprezintă intersecțiile, iar
 muchiile reprezintă străzile (vom considera străzile că fiind unidirecționale). O astfel de
