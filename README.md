@@ -16,7 +16,7 @@ Datele de intrare se citesc din fișierul `date.in`. Pentru a rula și salva out
 
 ## Exemplu `date.in`
 
-8 11
+```8 11
 Pacurari Nicolina TudorVladimirescu Copou Tatarasi PoduRos Palas Unirii
 Nicolina Pacurari
 Pacurari Palas
@@ -66,7 +66,7 @@ d Bogdan TudorVladimirescu
 r TudorVladimirescu Tatarasi 5
 info Bogdan
 1 Bogdan
-6 PoduRos Tatarasi PoduRos Palas Copou Nicolina
+6 PoduRos Tatarasi PoduRos Palas Copou Nicolina```
 
 ## Output
 
