@@ -1,5 +1,5 @@
 
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazon.svg" alt="Amazon Icon" width="24" height="24" /> Learn & Be Curious by Amazon
+ # <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazon.svg" alt="Amazon Icon" width="24" height="24" /> **Learn & Be Curious by Amazon
 
 
 ## Problema propusa
