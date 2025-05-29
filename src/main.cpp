@@ -170,7 +170,4 @@ int main()
         if (ch=='q' && caz==2) cin>>intersectie;
         P3(ch, start, end, caz,intersectie);
     }
-    //cout<<'\n';
-    //cout<<P2("TudorVladimirescu","Pacurari")<<'\n';
-    //cout<<P2("Pacurari","Palas");
 }
