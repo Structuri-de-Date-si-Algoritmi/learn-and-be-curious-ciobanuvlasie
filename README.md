@@ -1,4 +1,4 @@
-# Learn & Be Curious: Analizator Rețea Rutieră
+# Learn & Be Curious: Problema propusa 2025
 
 Introducere
 O hartă rutieră a unui oraș, definită prin intersecții și străzi între aceste intersecții, poate fi
@@ -8,29 +8,14 @@ reprezentare a unei hărți rutiere este foarte eficientă pentru a determina di
 ale acesteia (conectivitatea între diferite intersecții, care sunt cele mai frecventate rute, cel
 mai scurt drum între două puncte de interes etc.).
 
-## Structură proiect
-
-
-
-## Compilare
-
-În rădăcina repo-ului (unde se află `main.cpp`):
-
-```bash
-g++ main.cpp -o main
-```
 
 ## Rulare
 
 Datele de intrare se citesc din fișierul `date.in`. Pentru a rula și salva output în fișierele P1.out, P2.out, P3.out, P4.out și P5.out:
 
-```bash
-./main < date.in
-```
 
 ## Exemplu `date.in`
 
-````
 8 11
 Pacurari Nicolina TudorVladimirescu Copou Tatarasi PoduRos Palas Unirii
 Nicolina Pacurari
@@ -82,7 +67,6 @@ r TudorVladimirescu Tatarasi 5
 info Bogdan
 1 Bogdan
 6 PoduRos Tatarasi PoduRos Palas Copou Nicolina
-``` fileciteturn1file2
 
 ## Output
 
@@ -94,9 +78,4 @@ Se generează cinci fișiere:
 - `P4.out`: informații despre șoferi și topuri
 - `P5.out`: intersecții ordonate după combustibil
 
----
-
-Documentație minimală conform stilului “Learn & Be Curious”.
-
-````
 
