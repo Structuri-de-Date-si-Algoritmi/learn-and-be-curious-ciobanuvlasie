@@ -280,22 +280,58 @@ void P4()
             {
                 cout << "Soferi indisponibili\n";
             }
-            int best = soferi_disp[0];
+            int best = soferi_disp[0]; // consideram best primul sofer
+            int dist_best = bfs_rev_dist[soferi[best].loc];
+            double rating_max;
+            if (soferi[best].rides > 0)
+
+                rating_max = soferi[best].rating_sum / soferi[best].rides;
+            else
+                rating_max = 0.0;
             for (int i = 1; i < nrsd; i++)
             {
-                int current = soferi_disp[1];
-                int dist_best = bfs_rev_dist[soferi[best].loc];
+                int current = soferi_disp[i];
                 int dist_current = bfs_rev_dist[soferi[current].loc];
-                if (dist_best < dist_current)
+                if (dist_current < dist_best)
+                {
+                    best = current;
                     dist_best = dist_current;
+                    if (soferi[current].rides > 0)
+                        rating_max = soferi[current].rating_sum / soferi[current].rides;
+                    else
+                        rating_max = 0.0;
+                }
                 else if (dist_current == dist_best)
                 {
-                    //
+                    double rating_current;
+                    if (soferi[current].rides > 0)
+                        rating_current = soferi[current].rating_sum / soferi[current].rides;
+                    else
+                        rating_current = 0.0;
+                    if (rating_current > rating_max)
+                    {
+                        best = current;
+                        rating_max = rating_current;
+                    }
+                    else if (rating_current == rating_max)
+                    {
+                        if (strcmp(soferi[current].nume, soferi[best].nume) < 0)
+                            best = current;
+                    }
                 }
-                
             }
         }
+    else if (strcmp(c,"top_rating")==0){
+            int nrsoferi;
+            cin>>nrsoferi;
+            for (int i=0;i<nrsoferi;i++)
+                    for (int j=0;j<nrsoferi;j++)
+                            {
+                                if (soferi[i].rating_sum<soferi[j].rating_sum)
+                                        swap(soferi[i],soferi[j]);
+                            }
     }
+} 
 }
 
 void sortare(char strazi[][100])
@@ -320,7 +356,7 @@ void sortare(char strazi[][100])
 
 int main()
 {
-    
+
     freopen("date.in", "r", stdin);
     cin >> n >> m;
     for (int i = 0; i < n; i++)
@@ -367,5 +403,4 @@ int main()
             cin >> intersectie;
         P3(ch, start, end, caz, intersectie);
     }
-
 }
