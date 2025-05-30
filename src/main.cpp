@@ -321,15 +321,43 @@ void P4()
                 }
             }
         }
-    else if (strcmp(c,"top_rating")==0){
-            int nrsoferi;
-            cin>>nrsoferi;
+    else if (strcmp(c,"top_rating")==0)
+    {
+            int nrs;
+            cin>>nrs;
+            bool f[1000]={0};
+            int selectat=-1;
+            double ratingMax=0.0;
             for (int i=0;i<nrsoferi;i++)
-                    for (int j=0;j<nrsoferi;j++)
-                            {
-                                if (soferi[i].rating_sum<soferi[j].rating_sum)
-                                        swap(soferi[i],soferi[j]);
+            {
+                for (int j=0;j<nrs;j++)
+                    {
+                        double avg=0.0;
+                        if  (f[j]==0)
+                        {
+                            if (soferi[i].rides>0)
+                                avg=soferi[i].rating_sum/soferi[i].rides;
+                        }
+                        if (selectat==-1) // nu am selectat inca
+                        {
+                            selectat=j;
+                            ratingMax=avg;
+                        }
+                        else{
+                            if (avg>ratingMax){
+                                    selectat=j;
+                                    ratingMax=avg;
                             }
+                        
+                        else if (avg==ratingMax) 
+                            if (strcmp(soferi[j].nume,soferi[selectat].nume)<0)
+                                    selectat=j;
+                        }
+                    }
+            f[selectat]=1;
+            cout<<soferi[selectat].nume<<' ';        
+            }
+        cout<<'\n';
     }
 } 
 }
@@ -403,4 +431,8 @@ int main()
             cin >> intersectie;
         P3(ch, start, end, caz, intersectie);
     }
+    freopen("P4.out", "w", stdout);
+    P4();
+    for (int i=0;i<nrsoferi;i++)
+        cout<<soferi[i].nume<<" : " <<soferi[i].rating_sum<<'\n';
 }

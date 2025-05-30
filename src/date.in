@@ -30,3 +30,22 @@ c PoduRos Palas 2
 q TudorVladimirescu PoduRos 1
 c PoduRos Tatarasi 2
 c TudorVladimirescu Copou 3
+16
+d Andrei Pacurari
+d Bogdan Palas
+r PoduRos Copou 4
+r PoduRos Tatarasi 4
+top_dist 6
+d Mihaita Pacurari
+r Pacurari PoduRos 3
+b Bogdan
+top_rating 2
+info Mihaita
+r Palas TudorVladimirescu 5
+r Pacurari Unirii 4
+r TudorVladimirescu Palas 2
+d Bogdan TudorVladimirescu
+r TudorVladimirescu Tatarasi 5
+info Bogdan
+1 Bogdan
+6 PoduRos Tatarasi PoduRos Palas Copou Nicolina 
